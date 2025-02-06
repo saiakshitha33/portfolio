@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
@@ -18,26 +19,6 @@ const Contact = () => {
 
     const currentSEO = SEO.find((item) => item.page === "contact");
 
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-    });
-
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
-        }));
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form submitted:", formData);
-        // Add your form submission logic here
-    };
 
     return (
         <React.Fragment>
