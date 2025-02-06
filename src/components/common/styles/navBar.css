@@ -13,93 +13,116 @@ html {
 .navbar {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center !important;
     position: fixed;
-    top: 3vh;
+    top: 1vh;
     z-index: 999;
     width: 100%;
 }
 
 .nav-background {
-    width: auto; /* Automatically adjust to fit the content */
-    height: 40px; /* Adjust height as necessary */
-    padding: 0 30px; /* Add horizontal padding for spacing */
+    width: auto;
+    height: 40px;
+    padding: 0 30px;
     background: #fff;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
-    display: flex; /* Flexbox for proper centering */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    justify-content: space-around; /* Updated for better centering */
+    align-items: center;
+    margin: 0 auto; /* Ensure it's centered */
 }
 
 .nav-list {
     display: flex;
-    justify-content: space-between; /* Space out items evenly */
-    gap: 20px; /* Add spacing between items */
+    justify-content: center; /* Ensure center alignment */
+    gap: 20px;
     list-style: none;
     align-items: center;
     margin: 0;
     padding: 0;
+    width: 100%; /* Full width to use space */
 }
 
 .nav-item {
     font-weight: bold;
-    font-size: 1rem; /* Standard font size */
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* Ensure vertical alignment */
+    align-items: center;
 }
 
 .nav-item.active a {
-    color: #00bfa6 !important; /* Highlight active link */
+    color: #00bfa6 !important;
 }
 
 .nav-item a {
     text-decoration: none;
-    color: #000; /* Default link color */
+    color: #000;
     transition: color 0.3s ease-in-out;
 }
 
 .nav-item a:hover {
-    color: #00bfa6; /* Hover color */
-    transition: color 0.3s ease-in-out;
+    color: #00bfa6;
 }
 
-/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .nav-background {
-        width: 90%; /* Take up more width on smaller screens */
-        height: 40px;
-        padding: 0 20px;
+        width: 90%;
+        padding: 0 15px;
     }
 
     .nav-list {
-        gap: 15px; /* Reduce gap between items */
+        gap: 10px;
     }
 
     .nav-item {
-        font-size: 0.9rem; /* Adjust font size */
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 600px) {
     .navbar {
-        margin: 0;
-        width: 100%; /* Full width for smaller screens */
+        top: 10px;
         font-size: 80%;
     }
 
     .nav-background {
         width: 95%;
-        height: 40px;
         padding: 0 10px;
     }
 
     .nav-list {
-        gap: 10px; /* Minimal gap for smaller screens */
+        justify-content: center; /* Reinforce centering */
     }
 
     .nav-item {
-        font-size: 0.8rem; /* Smaller font size */
+        font-size: 0.8rem;
     }
 }
+
+
+
+/* Base Styles */
+.logo {
+    max-width: 60px; /* Control the size of the logo */
+    flex-shrink: 0; /* Prevent the logo from resizing */
+    transition: margin 0.3s ease; /* Smooth transition for any margin changes */
+}
+
+/* Media Queries for Mobile Adjustments */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 50px; /* Slightly smaller logo for mobile */
+        margin-top: -15px; /* Adjust the position to align with navbar */
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        max-width: 45px; /* Consistent size with other mobile settings */
+        margin-top: -17px; /* Higher lift for very small screens */
+    }
+}
+
