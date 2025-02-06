@@ -1,38 +1,18 @@
 const SEO = [
-	{
-		page: "home",
-		description:
-			" I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Sai Akshitha", "Akshitha Kota", "Sai Akshitha Reddy Kota"],
-	},
-
-	{
-		page: "about",
-		description:
-			" I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Sai Akshitha", "Akshitha Kota", "Sai Akshitha Reddy Kota"],
-	},
-
-	{
-		page: "articles",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Sai Akshitha", "Akshitha Kota", "Sai Akshitha Reddy Kota"],
-	},
-
-	{
-		page: "projects",
-		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Sai Akshitha", "Akshitha Kota", "Sai Akshitha Reddy Kota"],
-	},
-
-	{
-		page: "contact",
-		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Sai Akshitha", "Akshitha Kota", "Sai Akshitha Reddy Kota"],
-	},
+    {
+        page: "home",
+        title: "Sai Akshitha Reddy Kota - Software Developer",
+        description:
+            "Welcome to the official website of Sai Akshitha Reddy Kota. Discover my work in developing scalable, secure, and reliable web applications with modern technologies.",
+        keywords: ["Sai Akshitha Reddy Kota", "Web Developer", "Tech Innovator", "Akshitha Kota"],
+    },
+    {
+        page: "contact",
+        title: "Contact Sai Akshitha Reddy Kota - Collaborate on Tech Projects",
+        description:
+            "Get in touch with Sai Akshitha Reddy Kota for project collaborations and to discuss innovative tech solutions. I’m open to exploring new ideas and opportunities.",
+        keywords: ["Contact Sai Akshitha Reddy Kota", "Tech Collaboration", "Hire Sai Akshitha", "Akshitha Kota Contact"],
+    },
 ];
 
 export default SEO;
