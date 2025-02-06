@@ -1,0 +1,95 @@
+.certifications {
+    margin: 60px auto;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none !important; /* Force removal of any inherited background */
+}
+
+.certifications-title {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 2rem !important; /* Slightly smaller title */
+    font-weight: 500 !important;
+    color: #000000;
+    margin-bottom: 30px; /* Reduced margin */
+    background: none !important; /* Force removal of any inherited background */
+    padding: 0; /* Remove padding if any */
+    border-radius: 0; /* Remove rounded corners if applied */
+    box-shadow: none; /* Ensure no shadow is applied */
+    line-height: normal !important; /* Reset line-height if different */
+    letter-spacing: normal !important; 
+}
+
+
+
+
+.certifications-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%; /* Ensure the grid spans the full width */
+}
+
+.certification-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certification-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.certification-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.certification-button {
+    display: inline-block;
+    background-color: #000000; /* Initial button background color */
+    color: #ffffff; /* Text color */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.certification-button:hover {
+    background-color: #00bfa6; /* Hover background color */
+    color: #ffffff; /* Keep text color white */
+    text-decoration: none; /* Avoid underline on hover */
+}
+
+@media (max-width: 768px) {
+    .certifications-body {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .certification-card {
+        width: 100%;
+    }
+}

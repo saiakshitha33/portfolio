@@ -1,36 +1,41 @@
-@import "../../../data/styles.css";
-.social,
-.email-wrapper {
+.socials {
 	display: flex;
-	padding-bottom: 20px;
+	flex-direction: row; /* Arrange icons in a horizontal row */
+	justify-content: center; /* Center-align the social icons */
+	align-items: center; /* Align icons vertically */
+	gap: 20px; /* Space between social links */
+	margin-top: 30px; /* Add space above the social links */
 }
 
-.social a,
-.email-wrapper a {
+.social {
+	display: flex;
+	align-items: center; /* Vertically align text and icon */
+	gap: 10px; /* Space between icon and text */
 	text-decoration: none;
 }
 
+.social a {
+	text-decoration: none;
+	color: #000000; /* Default color for text and icons */
+	transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.social a:hover {
+	color: #14b8a6; /* Accent color on hover */
+}
+
 .social-icon {
-	font-size: 15px;
-	color: var(--secondary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28px; /* Icon size */
+}
+
+.icon {
+	font-size: 24px; /* Slightly smaller size for inner icon */
 }
 
 .social-text {
-	color: var(--secondary-color);
-	padding-left: 30px;
-	margin-top: -20px;
-	font-weight: 600;
-	font-size: 14px;
-}
-
-.email::before {
-	content: "";
-	display: block;
-	padding-top: 20px;
-	border-top: 3px solid #f4f4f5;
-	margin-top: 20px;
-}
-
-.email-wrapper {
-	padding-top: 20px;
+	font-size: 16px;
+	font-weight: bold; /* Bold text for labels */
 }

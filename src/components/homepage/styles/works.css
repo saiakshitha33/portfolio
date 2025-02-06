@@ -1,44 +1,84 @@
-@import "../../../data/styles.css";
+.works {
+	margin: 20px 0;
+	width: 80%;
+	display: flex;
+	justify-content:flex-start;
+	align-items: flex-start;
+}
 
 .works-body {
-	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px; /* Add spacing between each work entry */
 }
 
 .work {
 	display: flex;
-	padding-bottom: 40px;
-	width: 400px;
+	align-items: center;
+	gap: 15px; /* Spacing between image and text */
+	background: #f9f9f9;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .work-image {
-	height: 30px;
-	width: 30px;
-	border-radius: 50%;
-	outline: 6px solid white;
-	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  object-fit: cover !important;
+  display: inline-block !important;
+}
+
+
+
+.work-content {
+	display: flex;
+	flex-direction: column;
 }
 
 .work-title {
-	font-size: 15px;
-	font-weight: 700;
-	padding-left: 20px;
-	margin-top: -3px;
-	color: var(--secondary-color);
+  font-family: "Poppins", sans-serif;
+	font-size: 1rem; /* Increased font size for company name */
+	font-weight: 600;
+	color: #333;
 }
 
 .work-subtitle {
-	position: absolute;
-	font-size: 12px;
-	color: var(--secondary-color);
-	padding-top: 22px;
-	padding-left: 50px;
+  font-family: "Poppins", sans-serif;
+	font-size: 1rem; /* Increased font size for role */
+	color: #555;
+	margin-top: 5px;
 }
 
 .work-duration {
-	position: absolute;
-	width: 350px;
-	font-size: 12px;
-	padding-top: 20px;
-	text-align: right;
-	color: var(--tertiary-color);
+	font-size: 1rem; /* Increased font size for duration */
+	color: #777;
+	margin-top: 5px;
+}
+
+
+.card-title {
+  font-family: "Poppins", sans-serif;
+	font-size: 1.25rem; /* Increased font size for "Work Experience" title */
+	font-weight: 700;
+	color: #222;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+	.works {
+		width: 90%;
+	}
+
+	.work {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.work-content {
+		align-items: center;
+	}
 }

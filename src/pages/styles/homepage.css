@@ -1,150 +1,241 @@
-@import "../../data/styles.css";
 
-.homepage-logo-container {
+
+
+/* General Styles */
+.page-content {
+	width: 100%;
+	margin: 0 auto;
+  }
+  
+  .content-wrapper {
+	padding: 20px;
+  }
+  
+  /* Logo Container */
+  .homepage-logo-container {
 	display: flex;
 	justify-content: left;
 	align-items: center;
 	padding-top: 130px;
-}
-
-.homepage-container {
+  }
+  
+  .homepage-container {
 	padding-top: 25px;
-}
-
-.homepage-first-area {
+  }
+  
+  /* First Area */
+  .homepage-first-area {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.homepage-first-area-left-side {
+  }
+  
+  .homepage-first-area-left-side {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-}
-
-.homepage-title {
+  }
+  
+  .homepage-title {
 	width: 85% !important;
-}
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--primary-color);
+  }
+  
 
-.homepage-subtitle {
+
+  .homepage-subtitle {
 	width: 85% !important;
+	font-size: 1.5rem;
+	line-height: 1.8;
+	color: #000000; /* Set text color to black for darker appearance */
+	font-weight: 500; /* Optional: Add some weight to make the text bolder */
 }
 
-.homepage-first-area-right-side {
+.homepage-container .homepage-subtitle {
+    color: #000000 !important; /* Force black text */
+    font-weight: 500 !important; /* Optional boldness */
+}
+
+  .view-resume-container {
+	margin-top: 20px;
+  }
+  
+  .view-resume-button {
+	display: inline-block;
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 1rem;
+	font-weight: bold;
+	border-radius: 25px;
+	text-decoration: none;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .view-resume-button:hover {
+	background-color: var(--link-color);
+	transform: translateY(-3px);
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .homepage-first-area-right-side {
 	display: flex;
 	align-items: center;
-}
-
-.homepage-image-container {
+  }
+  
+  .homepage-image-container {
 	width: 370px;
 	height: 370px;
-}
-
-.homepage-image-wrapper {
+  }
+  
+  .homepage-image-wrapper {
 	overflow: hidden;
 	border-radius: 10%;
 	transform: rotate(3deg);
-}
-
-.homepage-image-wrapper img {
+  }
+  
+  .homepage-image-wrapper img {
 	width: 100%;
-}
-
-.homepage-socials {
+  }
+  
+  /* Social Icons Section */
+  .homepage-socials {
 	display: flex;
-	justify-content: left;
-	align-items: center;
+	justify-content: flex-start;
+	gap: 20px;
 	padding-top: 30px;
-}
-
-.homepage-social-icon {
-	padding-right: 20px;
-	font-size: 25px;
-	transition: color 0.2s ease-in-out;
+  }
+  
+  .homepage-social-icon {
+	font-size: 30px;
 	color: var(--secondary-color);
-}
+	transition: color 0.3s ease-in-out;
+  }
+  
+  .homepage-social-icon:hover {
+	color: #14b8a6;
+  }
+  
+  /* Certifications Section */
+  .homepage-certifications {
+	margin-top:30px;
+  }
+  
 
-.homepage-social-icon:hover {
+  .certifications-title {
+	text-align: left;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding: 10px;
 	color: var(--primary-color);
+	background-color: #f4f4f4; /* Added background box */
+	border-radius: 8px; /* Rounded corners for the box */
 }
 
-.homepage-after-title {
+.certifications-list {
+	list-style: none;
+	padding: 0;
+}
+
+.certifications-list li {
 	display: flex;
+	align-items: center;
+	gap: 15px;
+	font-size: 1.1rem;
+	padding: 10px 0;
 }
 
-.homepage-projects {
-	flex-basis: 300px;
-	padding-top: 40px;
+.certification-logo {
+	width: 40px;
+	height: auto;
 }
 
-.homepage-articles {
-	flex-basis: 900px;
-	padding-top: 30px;
-	margin-left: -30px;
-}
 
-.homepage-article {
-	padding-bottom: 5px;
-}
 
-.homepage-works {
-	flex-basis: 600px;
-	padding-top: 30px;
-}
+.certification-body{
+	margin-bottom: 10px;
+  }
+  
+  .work {
+	display: flex;
+	align-items: center; /* Align items vertically */
+	padding: 20px;
+	width: 400px;
+	border-radius: 10px; /* Smooth corners */
+	background-color: #f9f9f9; /* Light background */
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+	cursor: pointer;
+  }
+  
+  .work:hover {
+	transform: scale(1.05); /* Slight zoom effect */
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+	background-color: #ffffff; /* Brighter background */
+  }
+  
+  .work-image {
+	height: 40px; /* Slightly larger image */
+	width: 40px;
+	border-radius: 50%;
+	outline: 4px solid white;
+	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25); /* Highlighted shadow */
+  }
+  
 
-@media (max-width: 1024px) {
+
+
+
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
 	.homepage-first-area {
-		flex-direction: column;
+	  flex-direction: column;
 	}
-
+  
 	.homepage-first-area-left-side {
-		display: flex;
-		flex-direction: column; /* Changed: set direction to column */
-		align-items: flex-start;
-		width: 100%;
-		order: 2;
+	  margin-top: -20px;
+	  width: 100%;
+	  order: 2;
 	}
-
+  
 	.homepage-title {
-		width: 100% !important;
-		margin-top: 20px;
-		order: 2;
+	  width: 100% !important;
+	  margin-top: 20px;
+	  order: 2;
 	}
-
+  
 	.homepage-subtitle {
-		width: 100% !important;
-		margin-top: 10px;
-		order: 3;
+	  width: 100% !important;
+	  margin-top: 10px;
+	  order: 3;
 	}
-
+  
+	.view-resume-button {
+	  width: 100%;
+	  text-align: center;
+	  margin-top: 15px;
+	}
+  
 	.homepage-first-area-right-side {
-		width: 100%;
-		order: 1;
+	  width: 100%;
+	  order: 1;
 	}
-
+  
 	.homepage-image-container {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		margin-left: 10px;
-		order: 1;
+	  padding-top: 50px;
+	  padding-bottom: 50px;
+	  margin-left: 10px;
+	  order: 1;
 	}
-
-	.homepage-after-title {
-		flex-direction: column;
+  
+	.homepage-socials {
+	  justify-content: flex-start;
+	  margin-left: 20px;
 	}
-
-	.homepage-projects {
-		flex-basis: auto;
-	}
-
-	.homepage-articles {
-		flex-basis: auto;
-	}
-
-	.homepage-works {
-		flex-basis: auto;
-		margin-left: -25px;
-		margin-right: -25px;
-	}
-}
+  }
+  

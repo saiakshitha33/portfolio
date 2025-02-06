@@ -1,84 +1,62 @@
 const INFO = {
-	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
-		logo: "../logo.png",
-	},
+    main: {
+        title: "Portfolio by Akshitha",
+        name: "Sai Akshitha Reddy Kota",
+        email: "saiakshitha.kota@gmail.com",
+        logo: "../logo.png",
+    },
 
-	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
-	},
+    socials: {
+        github: "https://github.com/saiakshitha33",
+        linkedin: "https://www.linkedin.com/in/saiakshitha33/",
+        gmail: "mailto:saiakshitha33@gmail.com",
+        leetcode: "https://leetcode.com/u/saiakshitha33/",
+    },
 
-	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
-		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
-	},
+    homepage: {
+        title: "I'm Akshitha Kota",
+        description:
+            "I am a Masters CS student graduating this May 2025. I have experience in building scalable, secure, and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.I am always looking for new challenges and opportunities to grow.",
+    },
 
-	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
-		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
-	},
-
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-	},
-
-	projects: [
-		{
-			title: "Project 1",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 2",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 3",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 4",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-	],
+    projects: [
+        {
+            title: "CineQuest",
+            description:
+                "A movie booking website featuring an admin panel for site management and a user panel for booking and browsing movies.",
+            tags: ["AngularJS", "Spring Boot", "Java", "SQL"],
+            image: "https://www.cinequest.org/sites/default/files/styles/1000x316/public/default_images/topimages_cqplaceholder_0.png?itok=phdv_UbX",
+            demoLink: "https://cinequest.demo",
+            sourceLink: "https://github.com/saiakshitha33/Cinequest",
+        },
+        {
+            title: "Video Chat Application",
+            description:
+                "Engineered an innovative video chat application utilizing React, Node, and WebRTC, enabling seamless peer-to-peer communication for over 200 users in real-time sessions without latency issues and deployed with Docker.",
+            tags: ["React", "Node.js", "WebRTC", "Docker"],
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLwtRArfDhfYRFSi9S2TTvCRZI8j2uz_f_a9amegWaY7PPcUBBjMJsvS4f5TTu-1OvVEk&usqp=CAU",
+            demoLink: "https://video-chat.demo",
+            sourceLink: "https://github.com/saiakshitha33/React-and-Node-Video-application",
+        },
+        {
+            title: "Twitter Sentiment Analysis",
+            description:
+                "Created a Natural Language Processing (NLP) pipeline to classify tweets as positive or negative using machine learning algorithms like Logistic Regression, Naive Bayes, SVM, KNN, and Random Forest.",
+            tags: ["NLP", "Machine Learning", "Logistic Regression", "Random Forest"],
+            image: "https://cdn.prod.website-files.com/5fb24a974499e90dae242d98/623dc06eb2c436b175770ebf_21-p-800.png",
+            demoLink: "https://twitter-sentiment.demo",
+            sourceLink: "https://github.com/saiakshitha33/Twitter-sentiment-analysis",
+        },
+        {
+            title: "Text Summarizer",
+            description:
+                "Built a text summarization system using transformer models for efficient processing and deployed the dockerized app on AWS EC2 with CI/CD via GitHub Actions for automated workflows. Reduced manual effort by 80% with a scalable, real-time solution.",
+            tags: ["Transformers", "AWS", "CI/CD", "GitHub Actions"],
+            image: "https://api.wandb.ai/files/mostafaibrahim17/images/projects/37042936/b9bf06f6.png",
+            demoLink: "https://text-summarizer.demo",
+            sourceLink: "https://github.com/saiakshitha33/Text-summarizer",
+        },
+    ],
 };
 
 export default INFO;

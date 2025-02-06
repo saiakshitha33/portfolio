@@ -1,93 +1,56 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-	faTwitter,
-	faGithub,
-	faLinkedin,
-	faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
-
-import INFO from "../../data/user";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiGmail, SiLeetcode } from "react-icons/si"; // Import only required icons
 
 import "./styles/socials.css";
 
 const Socials = () => {
-	return (
-		<div className="socials">
-			<div className="social">
-				<a href={INFO.socials.twitter} target="_blank" rel="noreferrer">
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faTwitter}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on Twitter</div>
-				</a>
-			</div>
+  const socials = {
+    github: "https://github.com/saiakshitha33",
+    linkedin: "https://www.linkedin.com/in/saiakshitha33/",
+    gmail: "mailto:saiakshitha33@gmail.com",
+    leetcode: "https://leetcode.com/u/saiakshitha33/",
+  };
 
-			<div className="social">
-				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faGithub}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on GitHub</div>
-				</a>
-			</div>
+  return (
+    <div className="socials">
+      <div className="social">
+        <a href={socials.github} target="_blank" rel="noreferrer">
+          <div className="social-icon">
+            <FaGithub className="icon" />
+          </div>
+          <div className="social-text">GitHub</div>
+        </a>
+      </div>
 
-			<div className="social">
-				<a
-					href={INFO.socials.linkedin}
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faLinkedin}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on LinkedIn</div>
-				</a>
-			</div>
+      <div className="social">
+        <a href={socials.linkedin} target="_blank" rel="noreferrer">
+          <div className="social-icon">
+            <FaLinkedin className="icon" />
+          </div>
+          <div className="social-text">LinkedIn</div>
+        </a>
+      </div>
 
-			<div className="social">
-				<a
-					href={INFO.socials.instagram}
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faInstagram}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on Instagram</div>
-				</a>
-			</div>
+      <div className="social">
+        <a href={socials.gmail} target="_blank" rel="noreferrer">
+          <div className="social-icon">
+            <SiGmail className="icon" />
+          </div>
+          <div className="social-text">Email Me</div>
+        </a>
+      </div>
 
-			<div className="email">
-				<div className="email-wrapper">
-					<a
-						href={`mailto:${INFO.main.email}`}
-						target="_blank"
-						rel="noreferrer"
-					>
-						<div className="social-icon">
-							<FontAwesomeIcon icon={faEnvelope} />
-						</div>
-
-						<div className="social-text">{INFO.main.email}</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	);
+      <div className="social">
+        <a href={socials.leetcode} target="_blank" rel="noreferrer">
+          <div className="social-icon">
+            <SiLeetcode className="icon" />
+          </div>
+          <div className="social-text">LeetCode</div>
+        </a>
+      </div>
+    </div>
+  );
 };
 
 export default Socials;

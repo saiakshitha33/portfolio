@@ -17,6 +17,15 @@
 	width: 100% !important;
 }
 
+
+.contact-subtitle {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    line-height: 1.8; /* Adjust line spacing for readability */
+    color: var(--secondary-color); /* Use the theme's secondary color */
+    text-align: left; /* Ensure consistent alignment */
+}
+
 .contact-container {
 	display: flex;
 	flex-direction: column;

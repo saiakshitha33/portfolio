@@ -56,3 +56,36 @@
 		width: 100%;
 	}
 }
+
+.resume-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.view-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 24px;
+	background-color: #007bff; /* Button color */
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	border: 2px solid #007bff;
+	border-radius: 8px; /* Rounded corners */
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.view-btn:hover {
+	background-color: white;
+	color: #007bff;
+	border-color: #007bff;
+	box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.view-icon {
+	margin-right: 8px; /* Space between icon and text */
+	font-size: 18px;
+}
