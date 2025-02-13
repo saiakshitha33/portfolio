@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiGmail, SiLeetcode } from "react-icons/si";
+import { SiGmail } from "react-icons/si";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
