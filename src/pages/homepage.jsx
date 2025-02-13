@@ -116,9 +116,6 @@ const Homepage = () => {
               <a href={`mailto:${INFO.main.email}`} target="_blank" rel="noreferrer">
                 <SiGmail className="homepage-social-icon" />
               </a>
-              <a href={INFO.socials.leetcode} target="_blank" rel="noreferrer">
-                <SiLeetcode className="homepage-social-icon" />
-              </a>
             </div>
 
             {/* Section Containers with IDs */}
