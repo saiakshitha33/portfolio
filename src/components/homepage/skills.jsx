@@ -35,10 +35,14 @@ const Skills = () => {
         {
             category: "Frameworks",
             items: [
-                { name: "Spring Boot", icon: "https://miro.medium.com/v2/resize:fit:600/1*gLBbycoPkt6wAPGTyDAbZQ.png" },
-                { name: "ReactJS", icon: "https://miro.medium.com/v2/resize:fit:1000/1*Yafu7ihc1LFuP4azerAa4w.png" },
-                { name: "NodeJs", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" },
-                { name: "Bootstrap", icon: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" },
+                
+                { "name": "Spring Boot", "icon": "https://miro.medium.com/v2/resize:fit:600/1*gLBbycoPkt6wAPGTyDAbZQ.png" },
+                { "name": "ReactJS", "icon": "https://miro.medium.com/v2/resize:fit:1000/1*Yafu7ihc1LFuP4azerAa4w.png" },
+                { "name": "NodeJs", "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" },
+                { "name": "Bootstrap", "icon": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" },
+                { "name": "Ruby on Rails", "icon": "https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" }
+                
+                
             ],
         },
         {
@@ -49,7 +53,6 @@ const Skills = () => {
                 { name: "Kubernetes", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png" },
                 { name: "Kafka", icon: "https://miro.medium.com/v2/resize:fit:702/1*c3iIcOrrffEf4ZJnD_vLOQ.png" },
                 { name: "Redis", icon: "https://www.loginradius.com/blog/static/4eda1ce5a0f541d97fdf27cd88bf2a49/03979/index.png" },
-                { name: "Kafka", icon: "https://miro.medium.com/v2/resize:fit:702/1*c3iIcOrrffEf4ZJnD_vLOQ.png" },
                 { name: "RabbitMq", icon: "https://www.meshiq.com/wp-content/uploads/rabbitmq.png" },
             ],
         },

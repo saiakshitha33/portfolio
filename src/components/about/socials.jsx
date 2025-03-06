@@ -9,7 +9,7 @@ const Socials = () => {
     github: "https://github.com/saiakshitha33",
     linkedin: "https://www.linkedin.com/in/saiakshitha33/",
     gmail: "mailto:saiakshitha33@gmail.com",
-    leetcode: "https://leetcode.com/u/saiakshitha33/",
+
   };
 
   return (
@@ -38,15 +38,6 @@ const Socials = () => {
             <SiGmail className="icon" />
           </div>
           <div className="social-text">Email Me</div>
-        </a>
-      </div>
-
-      <div className="social">
-        <a href={socials.leetcode} target="_blank" rel="noreferrer">
-          <div className="social-icon">
-            <SiLeetcode className="icon" />
-          </div>
-          <div className="social-text">LeetCode</div>
         </a>
       </div>
     </div>
