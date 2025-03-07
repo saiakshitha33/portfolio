@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiGmail, SiLeetcode } from "react-icons/si"; // Import only required icons
+import { SiGmail } from "react-icons/si"; // Import only required icons
 
 import "./styles/socials.css";
 
