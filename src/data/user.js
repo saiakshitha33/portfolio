@@ -33,6 +33,7 @@ const INFO = {
                 title: "Video Chat Application",
                 description: "Engineered an innovative video chat application utilizing React, Node, and WebRTC, enabling seamless peer-to-peer communication for over 200 users in real-time sessions without latency issues and deployed with Docker.",
                 tags: ["React", "Node.js", "WebRTC", "Docker"],
+                image: "https://play-lh.googleusercontent.com/jl9TtJVO9SgpMVClhGao-u28aYr3q7fgEBAsimEWfbd2UZF1S6UG2SrC-8ny_kg4-hVh" ,
                 demoLink: "https://video-chat.demo",
                 sourceLink: "https://github.com/saiakshitha33/Video-chat-application",
             },
@@ -56,6 +57,7 @@ const INFO = {
                 title: "AI Insight Blog Platform",
                 description: "Dynamic platform built with Ruby on Rails, designed to share AI insights. Features include a dynamic article feed, interactive comment system, and personalized dashboards, all styled responsively and powered by Nginx and Docker for robust deployment.",
                 tags: ["Ruby on Rails", "HTML", "CSS", "JavaScript", "Dojo", "jQuery", "Nginx", "Docker"],
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyVwdP8ksEz_tqsuADq7xu4sXKXqKFv6uIDQ&s"               ,
                 demoLink: "https://ai-insight-blog.demo",
                 sourceLink: "https://github.com/saiakshitha33/Ai-insight-blog-app",
             }
